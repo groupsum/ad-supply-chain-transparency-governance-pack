@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_package_name": "ssot-pack-ad-supply-chain-transparency",
+  "origin": {
+    "id": "pack:ad-supply-chain-transparency",
+    "package_name": "ssot-pack-ad-supply-chain-transparency",
+    "import_name": "ssot_pack_ad_supply_chain_transparency",
+    "kind": "governance-pack",
+    "title": "Advertising Supply Chain Transparency",
+    "description": "Installable SSOT governance pack for ads.txt, app-ads.txt, sellers.json, SupplyChain Object, buyers.json, DemandChain Object, and ads.cert.",
+    "homepage": "https://github.com/groupsum/ad-supply-chain-transparency-governance-pack",
+    "repository": "https://github.com/groupsum/ad-supply-chain-transparency-governance-pack"
+  },
+  "compatibility": {
+    "python": ">=3.10,<3.15",
+    "ssot_registry_schema": ">=0.4.0",
+    "ssot_pack_contract": ">=0.2.17,<0.3.0"
+  },
+  "trust": {
+    "trusted_by_default": false,
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-ad-supply-chain-transparency"
+  },
+  "documents": {
+    "adr": {
+      "manifest_path": "templates/adr/manifest.json"
+    },
+    "spec": {
+      "manifest_path": "templates/specs/manifest.json"
+    }
+  }
+}

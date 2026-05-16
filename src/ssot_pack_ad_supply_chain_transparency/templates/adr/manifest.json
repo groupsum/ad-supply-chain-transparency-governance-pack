@@ -1,0 +1,38 @@
+[
+  {
+    "id": "adr:ad-supply-chain-authority",
+    "number": 1001,
+    "slug": "ad-supply-chain-authority",
+    "title": "Ad Supply Chain Authority",
+    "filename": "ADR-1001-ad-supply-chain-authority.yaml",
+    "target_path": ".ssot/adr/ADR-1001-ad-supply-chain-authority.yaml",
+    "sha256": "2295b0e8955b2b840ca1b90bd1a45e9f4388f2030b094b6da356f427e537ed30",
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-ad-supply-chain-transparency",
+    "immutable": true,
+    "minimum_schema_version": "0.4.0",
+    "introduced_in": "0.1.0",
+    "status": "accepted",
+    "supersedes": [],
+    "superseded_by": [],
+    "status_notes": []
+  },
+  {
+    "id": "adr:seller-buyer-transparency-boundary",
+    "number": 1002,
+    "slug": "seller-buyer-transparency-boundary",
+    "title": "Seller Buyer Transparency Boundary",
+    "filename": "ADR-1002-seller-buyer-transparency-boundary.yaml",
+    "target_path": ".ssot/adr/ADR-1002-seller-buyer-transparency-boundary.yaml",
+    "sha256": "a23dd1f4c7ab008c772c985d3c0ae81e2aa11695ef112a0c2246e5da5315d4ae",
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-ad-supply-chain-transparency",
+    "immutable": true,
+    "minimum_schema_version": "0.4.0",
+    "introduced_in": "0.1.0",
+    "status": "accepted",
+    "supersedes": [],
+    "superseded_by": [],
+    "status_notes": []
+  }
+]
