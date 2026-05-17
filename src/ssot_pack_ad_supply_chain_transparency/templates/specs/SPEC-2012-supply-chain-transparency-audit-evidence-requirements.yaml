@@ -1,0 +1,42 @@
+{
+  "id": "spc:supply-chain-transparency-audit-evidence-requirements",
+  "number": 2012,
+  "slug": "supply-chain-transparency-audit-evidence-requirements",
+  "title": "Supply Chain Transparency Audit Evidence Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream audit evidence retained for advertising supply-chain transparency claims.",
+    "excludes": [
+      "Ad measurement quality reports",
+      "Customer identity evidence",
+      "Financial settlement records unless selected as transparency evidence"
+    ]
+  },
+  "authority_sources": [
+    "ads.txt",
+    "app-ads.txt",
+    "sellers.json",
+    "SupplyChain Object",
+    "buyers.json",
+    "DemandChain Object",
+    "ads.cert",
+    "OpenRTB supply-chain fields"
+  ],
+  "requirements": [
+    "Retain source snapshots, parsed records, request-time chain objects, signature validation outputs, reconciliation reports, and transparency audit reports.",
+    "Link evidence artifacts to the source target, processing step, validation result, reconciliation result, and claim they substantiate.",
+    "Preserve evidence immutability or content hashes for audit-sensitive artifacts."
+  ],
+  "verification": [
+    "evidence inventory tests",
+    "claim-to-evidence linkage checks",
+    "content hash or immutability checks for audit artifacts"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:supply-chain-transparency-reconciliation-policy",
+    "adr:ads-cert-authenticated-inventory-policy"
+  ]
+}

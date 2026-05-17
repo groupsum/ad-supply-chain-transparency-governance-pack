@@ -1,0 +1,24 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2003"
+number: 2003
+slug: "seller-and-supply-path-target-requirements"
+title: "Seller And Supply Path Target Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Seller and supply-path targets must be curated as distinct but reconcilable authority surfaces. sellers.json targets must cover file structure, seller identifiers, seller type, name and domain handling, confidentiality states, and seller-account relationships. SupplyChain Object targets must cover node ordering, completeness, advertising system identifiers, seller identifiers, payment involvement, OpenRTB carriage, and request-time normalization."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Requirements
+  
+  Seller and supply-path targets must be curated as distinct but reconcilable authority surfaces. sellers.json targets must cover file structure, seller identifiers, seller type, name and domain handling, confidentiality states, and seller-account relationships. SupplyChain Object targets must cover node ordering, completeness, advertising system identifiers, seller identifiers, payment involvement, OpenRTB carriage, and request-time normalization.
+  
+  ## Evidence
+  
+  The repository must map seller and supply-path targets to downstream templates that require parsed seller records, parsed supply-chain nodes, and reconciliation outputs.
+spec_kind: "governance"

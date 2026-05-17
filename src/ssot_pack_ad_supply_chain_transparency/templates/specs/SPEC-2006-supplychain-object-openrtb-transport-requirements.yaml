@@ -1,0 +1,35 @@
+{
+  "id": "spc:supplychain-object-openrtb-transport-requirements",
+  "number": 2006,
+  "slug": "supplychain-object-openrtb-transport-requirements",
+  "title": "SupplyChain Object OpenRTB Transport Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream carriage, parsing, normalization, and retention of supply-chain fields from OpenRTB requests.",
+    "excludes": [
+      "OpenRTB fields unrelated to supply-chain transparency",
+      "Static seller file parsing",
+      "DemandChain Object validation"
+    ]
+  },
+  "authority_sources": [
+    "OpenRTB supply-chain fields",
+    "SupplyChain Object"
+  ],
+  "requirements": [
+    "Extract supply-chain fields from OpenRTB requests using the downstream-selected request versions and surfaces.",
+    "Normalize OpenRTB-carried supply-chain data into the same internal representation used for SupplyChain Object validation.",
+    "Retain request fixtures and transport parsing evidence for every supply-chain transparency claim based on OpenRTB carriage."
+  ],
+  "verification": [
+    "OpenRTB request fixture tests",
+    "supply-chain field extraction tests",
+    "transport normalization tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:supplychain-object-path-transparency-policy"
+  ]
+}

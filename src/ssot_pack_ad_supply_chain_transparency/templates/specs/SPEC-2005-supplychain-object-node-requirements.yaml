@@ -1,0 +1,34 @@
+{
+  "id": "spc:supplychain-object-node-requirements",
+  "number": 2005,
+  "slug": "supplychain-object-node-requirements",
+  "title": "SupplyChain Object Node Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream validation of SupplyChain Object nodes and supply-path semantics.",
+    "excludes": [
+      "Static seller file retrieval",
+      "DemandChain Object validation",
+      "Buyer identity files"
+    ]
+  },
+  "authority_sources": [
+    "SupplyChain Object"
+  ],
+  "requirements": [
+    "Validate supply-chain object completeness, node ordering, advertising system identifiers, seller identifiers, payment involvement indicators, and node-level required fields.",
+    "Normalize parsed nodes before they are used in transparency claims or reconciliation outputs.",
+    "Retain raw request values, parsed nodes, validation failures, and normalized path records."
+  ],
+  "verification": [
+    "schain parser fixture tests",
+    "node ordering and completeness tests",
+    "invalid node failure-path tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:supplychain-object-path-transparency-policy"
+  ]
+}

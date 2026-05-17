@@ -1,0 +1,34 @@
+{
+  "id": "spc:ads-cert-signature-validation-requirements",
+  "number": 2009,
+  "slug": "ads-cert-signature-validation-requirements",
+  "title": "Ads.cert Signature Validation Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream validation of signed or authenticated advertising inventory evidence.",
+    "excludes": [
+      "General TLS certificate management",
+      "Non-advertising message signing",
+      "Vendor procurement decisions"
+    ]
+  },
+  "authority_sources": [
+    "ads.cert"
+  ],
+  "requirements": [
+    "Validate signed or authenticated inventory evidence before using it for supply-chain transparency claims.",
+    "Record successful validation results, validation inputs, signing metadata selected by downstream policy, and validation failures.",
+    "Retain failure evidence and prevent failed signature validation from silently supporting transparency claims."
+  ],
+  "verification": [
+    "valid signature fixture tests",
+    "invalid signature failure-path tests",
+    "signature evidence retention tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:ads-cert-authenticated-inventory-policy"
+  ]
+}

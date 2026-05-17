@@ -1,0 +1,26 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2005"
+number: 2005
+slug: "authenticated-supply-chain-target-requirements"
+title: "Authenticated Supply Chain Target Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Authenticated supply-chain targets must cover ads.cert signature or authenticated inventory evidence, OpenRTB request-time chain fields, validation failure handling, retained proof artifacts, and reconciliation between declared files and transmitted chain evidence."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Requirements
+  
+  Authenticated supply-chain targets must cover ads.cert signature or authenticated inventory evidence, OpenRTB request-time chain fields, validation failure handling, retained proof artifacts, and reconciliation between declared files and transmitted chain evidence.
+  
+  The repository must keep authenticated evidence targets implementation-neutral and must not require one exchange, SSP, DSP, verification vendor, or cryptographic storage system.
+  
+  ## Evidence
+  
+  Downstream templates must identify expected source snapshots, parsed records, request-time chain objects, signature validation outputs, reconciliation reports, and audit evidence artifacts.
+spec_kind: "governance"

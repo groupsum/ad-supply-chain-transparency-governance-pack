@@ -1,0 +1,24 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2004"
+number: 2004
+slug: "buyer-and-demand-path-target-requirements"
+title: "Buyer And Demand Path Target Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Buyer and demand-path targets must be curated as distinct but reconcilable authority surfaces. buyers.json targets must cover file structure, buyer identifiers, buyer metadata, confidentiality treatment, and buyer-account relationships. DemandChain Object targets must cover node ordering, completeness, identifiers, participant semantics, and request-time normalization."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Requirements
+  
+  Buyer and demand-path targets must be curated as distinct but reconcilable authority surfaces. buyers.json targets must cover file structure, buyer identifiers, buyer metadata, confidentiality treatment, and buyer-account relationships. DemandChain Object targets must cover node ordering, completeness, identifiers, participant semantics, and request-time normalization.
+  
+  ## Evidence
+  
+  The repository must map buyer and demand-path targets to downstream templates that require parsed buyer records, parsed demand-chain nodes, and buyer path reconciliation outputs.
+spec_kind: "governance"

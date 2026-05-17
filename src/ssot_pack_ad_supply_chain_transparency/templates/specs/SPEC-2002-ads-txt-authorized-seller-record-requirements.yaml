@@ -1,0 +1,34 @@
+{
+  "id": "spc:ads-txt-authorized-seller-record-requirements",
+  "number": 2002,
+  "slug": "ads-txt-authorized-seller-record-requirements",
+  "title": "Ads.txt Authorized Seller Record Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream validation of ads.txt authorized-seller records.",
+    "excludes": [
+      "File retrieval mechanics",
+      "App inventory seller declarations",
+      "Request-time supply-chain object validation"
+    ]
+  },
+  "authority_sources": [
+    "ads.txt"
+  ],
+  "requirements": [
+    "Validate exchange domain, seller account identifier, relationship type, and certification authority identifier where present.",
+    "Normalize direct and reseller relationships before seller authorization records are used in transparency claims.",
+    "Preserve duplicate, conflicting, and invalid record evidence for audit review."
+  ],
+  "verification": [
+    "authorized seller record validation tests",
+    "relationship type normalization tests",
+    "duplicate and conflict handling tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:ads-txt-authorized-digital-seller-policy"
+  ]
+}

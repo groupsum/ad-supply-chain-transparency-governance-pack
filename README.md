@@ -38,10 +38,18 @@ Advertising Supply Chain Transparency
 
 ## Included SPECs
 
-- `spc:ads-txt-app-ads-txt-contract` - Ads.txt App-ads.txt Contract
-- `spc:sellers-json-schain-contract` - Sellers.json SupplyChain Contract
-- `spc:buyers-json-demandchain-contract` - Buyers.json DemandChain Contract
-- `spc:ads-cert-contract` - Ads.cert Contract
+- `spc:ads-txt-file-discovery-and-parsing-requirements` - Ads.txt File Discovery And Parsing Requirements
+- `spc:ads-txt-authorized-seller-record-requirements` - Ads.txt Authorized Seller Record Requirements
+- `spc:app-ads-txt-discovery-and-parsing-requirements` - App-ads.txt Discovery And Parsing Requirements
+- `spc:sellers-json-file-and-seller-record-requirements` - Sellers.json File And Seller Record Requirements
+- `spc:supplychain-object-node-requirements` - SupplyChain Object Node Requirements
+- `spc:supplychain-object-openrtb-transport-requirements` - SupplyChain Object OpenRTB Transport Requirements
+- `spc:buyers-json-file-and-buyer-record-requirements` - Buyers.json File And Buyer Record Requirements
+- `spc:demandchain-object-node-requirements` - DemandChain Object Node Requirements
+- `spc:ads-cert-signature-validation-requirements` - Ads.cert Signature Validation Requirements
+- `spc:seller-authorization-reconciliation-requirements` - Seller Authorization Reconciliation Requirements
+- `spc:buyer-demand-path-reconciliation-requirements` - Buyer Demand Path Reconciliation Requirements
+- `spc:supply-chain-transparency-audit-evidence-requirements` - Supply Chain Transparency Audit Evidence Requirements
 
 ## Install With uv
 

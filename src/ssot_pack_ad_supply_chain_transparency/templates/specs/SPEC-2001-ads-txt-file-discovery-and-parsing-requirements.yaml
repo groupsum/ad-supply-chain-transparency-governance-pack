@@ -1,0 +1,34 @@
+{
+  "id": "spc:ads-txt-file-discovery-and-parsing-requirements",
+  "number": 2001,
+  "slug": "ads-txt-file-discovery-and-parsing-requirements",
+  "title": "Ads.txt File Discovery And Parsing Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream discovery, retrieval, parsing, canonicalization, and error handling for web authorized-seller files.",
+    "excludes": [
+      "App inventory seller declarations",
+      "Non-advertising partner files",
+      "Seller identity fields governed by sellers.json"
+    ]
+  },
+  "authority_sources": [
+    "ads.txt"
+  ],
+  "requirements": [
+    "Discover and retrieve ads.txt files from the downstream-selected authoritative web inventory locations.",
+    "Parse records, comments, variables, malformed rows, duplicate rows, and unsupported rows deterministically.",
+    "Retain source snapshots and parser outputs for every ads.txt file used in a transparency claim."
+  ],
+  "verification": [
+    "ads.txt discovery tests",
+    "ads.txt parser fixture tests",
+    "malformed and duplicate record handling tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:ads-txt-authorized-digital-seller-policy"
+  ]
+}

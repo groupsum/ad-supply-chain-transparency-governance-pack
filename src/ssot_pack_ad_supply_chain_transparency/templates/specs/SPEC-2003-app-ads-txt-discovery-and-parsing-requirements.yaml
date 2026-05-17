@@ -1,0 +1,34 @@
+{
+  "id": "spc:app-ads-txt-discovery-and-parsing-requirements",
+  "number": 2003,
+  "slug": "app-ads-txt-discovery-and-parsing-requirements",
+  "title": "App-ads.txt Discovery And Parsing Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream app inventory seller authorization discovery, retrieval, parsing, and validation.",
+    "excludes": [
+      "Web inventory ads.txt files",
+      "App store metadata unrelated to seller authorization",
+      "Request-time supply-chain object validation"
+    ]
+  },
+  "authority_sources": [
+    "app-ads.txt"
+  ],
+  "requirements": [
+    "Resolve the developer website or downstream-selected authoritative location used to retrieve app-ads.txt.",
+    "Parse app-ads.txt records using the same authorized-seller record rules selected for app inventory.",
+    "Retain discovery evidence, file snapshots, parser outputs, and invalid record evidence."
+  ],
+  "verification": [
+    "developer website discovery tests",
+    "app-ads.txt parser fixture tests",
+    "app seller authorization record validation tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:app-ads-txt-authorized-app-seller-policy"
+  ]
+}

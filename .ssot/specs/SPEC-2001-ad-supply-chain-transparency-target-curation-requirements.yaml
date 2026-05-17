@@ -1,0 +1,28 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2001"
+number: 2001
+slug: "ad-supply-chain-transparency-target-curation-requirements"
+title: "Ad Supply Chain Transparency Target Curation Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "This repository must curate advertising supply-chain transparency targets only when they define authorized seller declarations, seller identity, request-time supply paths, buyer identity, demand paths, authenticated inventory evidence, or OpenRTB supply-chain carriage."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Requirements
+  
+  This repository must curate advertising supply-chain transparency targets only when they define authorized seller declarations, seller identity, request-time supply paths, buyer identity, demand paths, authenticated inventory evidence, or OpenRTB supply-chain carriage.
+  
+  Each curated target must record authority owner, source title, source type, governed transparency capability, and version or publication date when available.
+  
+  The curated target set must include ads.txt, app-ads.txt, sellers.json, SupplyChain Object, buyers.json, DemandChain Object, ads.cert, and OpenRTB supply-chain fields.
+  
+  ## Exclusions
+  
+  The curation surface excludes generic ad measurement quality, campaign attribution, customer identity, consent transport, and non-ad partner transparency unless used only as contextual input for an advertising supply-chain transparency target.
+spec_kind: "governance"

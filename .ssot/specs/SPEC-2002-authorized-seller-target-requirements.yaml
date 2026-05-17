@@ -1,0 +1,24 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2002"
+number: 2002
+slug: "authorized-seller-target-requirements"
+title: "Authorized Seller Target Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Authorized seller targets must be curated separately for web inventory and app inventory. ads.txt targets must cover file discovery, retrieval, parsing, seller account identifiers, exchange domains, relationship types, certification authority identifiers, duplicate handling, and reconciliation expectations. app-ads.txt targets must additionally cover developer website discovery and app inventory ownership paths."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Requirements
+  
+  Authorized seller targets must be curated separately for web inventory and app inventory. ads.txt targets must cover file discovery, retrieval, parsing, seller account identifiers, exchange domains, relationship types, certification authority identifiers, duplicate handling, and reconciliation expectations. app-ads.txt targets must additionally cover developer website discovery and app inventory ownership paths.
+  
+  ## Evidence
+  
+  The repository must retain target metadata that justifies downstream templates for ads.txt discovery, app-ads.txt discovery, authorized-seller record validation, and seller authorization reconciliation.
+spec_kind: "governance"

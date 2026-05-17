@@ -1,0 +1,34 @@
+{
+  "id": "spc:buyers-json-file-and-buyer-record-requirements",
+  "number": 2007,
+  "slug": "buyers-json-file-and-buyer-record-requirements",
+  "title": "Buyers.json File And Buyer Record Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream buyers.json file validation and buyer identity record handling.",
+    "excludes": [
+      "Seller identity files",
+      "DemandChain Object node ordering",
+      "Campaign attribution records"
+    ]
+  },
+  "authority_sources": [
+    "buyers.json"
+  ],
+  "requirements": [
+    "Validate buyers.json file structure and required buyer record fields selected by downstream policy.",
+    "Normalize buyer identifiers, buyer metadata, confidentiality treatment, and account relationships.",
+    "Retain buyer file snapshots, parsed records, invalid record reports, and confidentiality-handling evidence."
+  ],
+  "verification": [
+    "buyers.json schema or parser tests",
+    "buyer record normalization tests",
+    "confidential buyer handling tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:buyers-json-buyer-identity-policy"
+  ]
+}

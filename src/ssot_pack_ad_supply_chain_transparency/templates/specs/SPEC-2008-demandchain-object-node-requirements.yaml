@@ -1,0 +1,34 @@
+{
+  "id": "spc:demandchain-object-node-requirements",
+  "number": 2008,
+  "slug": "demandchain-object-node-requirements",
+  "title": "DemandChain Object Node Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream validation of DemandChain Object nodes and buy-side path semantics.",
+    "excludes": [
+      "SupplyChain Object validation",
+      "Static buyer file retrieval",
+      "Sell-side seller identity files"
+    ]
+  },
+  "authority_sources": [
+    "DemandChain Object"
+  ],
+  "requirements": [
+    "Validate demand-chain object completeness, node ordering, participant identifiers, buyer identifiers, and node-level required fields selected by downstream policy.",
+    "Normalize parsed demand-chain nodes before they are used in transparency claims or reconciliation outputs.",
+    "Retain raw request values, parsed nodes, validation failures, and normalized demand-path records."
+  ],
+  "verification": [
+    "dchain parser fixture tests",
+    "node ordering and completeness tests",
+    "invalid node failure-path tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:demandchain-object-path-transparency-policy"
+  ]
+}

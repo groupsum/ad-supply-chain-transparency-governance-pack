@@ -1,0 +1,37 @@
+{
+  "id": "spc:seller-authorization-reconciliation-requirements",
+  "number": 2010,
+  "slug": "seller-authorization-reconciliation-requirements",
+  "title": "Seller Authorization Reconciliation Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream reconciliation among ads.txt, app-ads.txt, sellers.json, and request-time SupplyChain Object evidence.",
+    "excludes": [
+      "Buyer demand-path reconciliation",
+      "Ad measurement quality scoring",
+      "Campaign attribution logic"
+    ]
+  },
+  "authority_sources": [
+    "ads.txt",
+    "app-ads.txt",
+    "sellers.json",
+    "SupplyChain Object"
+  ],
+  "requirements": [
+    "Define reconciliation keys across authorized-seller records, seller identity records, and request-time supply-chain nodes.",
+    "Report unmatched, conflicting, missing, confidential, and invalid seller-path states explicitly.",
+    "Retain reconciliation inputs, outputs, and failure evidence for audit review."
+  ],
+  "verification": [
+    "seller reconciliation success tests",
+    "seller mismatch and missing-record tests",
+    "confidential seller reconciliation tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:supply-chain-transparency-reconciliation-policy"
+  ]
+}

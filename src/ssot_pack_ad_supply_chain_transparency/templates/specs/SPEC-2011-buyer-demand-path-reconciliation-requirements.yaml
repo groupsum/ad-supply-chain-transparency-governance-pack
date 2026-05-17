@@ -1,0 +1,35 @@
+{
+  "id": "spc:buyer-demand-path-reconciliation-requirements",
+  "number": 2011,
+  "slug": "buyer-demand-path-reconciliation-requirements",
+  "title": "Buyer Demand Path Reconciliation Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream reconciliation among buyers.json records and request-time DemandChain Object evidence.",
+    "excludes": [
+      "Seller supply-path reconciliation",
+      "Campaign attribution logic",
+      "Financial settlement records"
+    ]
+  },
+  "authority_sources": [
+    "buyers.json",
+    "DemandChain Object"
+  ],
+  "requirements": [
+    "Define reconciliation keys across buyer identity records and request-time demand-chain nodes.",
+    "Report unmatched, conflicting, missing, confidential, and invalid demand-path states explicitly.",
+    "Retain buyer reconciliation inputs, outputs, and failure evidence for audit review."
+  ],
+  "verification": [
+    "buyer reconciliation success tests",
+    "buyer mismatch and missing-record tests",
+    "confidential buyer reconciliation tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:supply-chain-transparency-reconciliation-policy"
+  ]
+}

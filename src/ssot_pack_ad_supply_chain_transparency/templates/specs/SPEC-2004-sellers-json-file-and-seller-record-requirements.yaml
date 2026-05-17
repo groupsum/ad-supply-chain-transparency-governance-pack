@@ -1,0 +1,34 @@
+{
+  "id": "spc:sellers-json-file-and-seller-record-requirements",
+  "number": 2004,
+  "slug": "sellers-json-file-and-seller-record-requirements",
+  "title": "Sellers.json File And Seller Record Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream sellers.json file validation and seller identity record handling.",
+    "excludes": [
+      "Buyer identity files",
+      "Request-time supply-chain node ordering",
+      "Authorized seller file discovery"
+    ]
+  },
+  "authority_sources": [
+    "sellers.json"
+  ],
+  "requirements": [
+    "Validate sellers.json file structure and required seller record fields selected by downstream policy.",
+    "Normalize seller identifiers, seller types, names, domains, confidentiality states, and account relationships.",
+    "Retain seller file snapshots, parsed records, invalid record reports, and confidentiality-handling evidence."
+  ],
+  "verification": [
+    "sellers.json schema or parser tests",
+    "seller record normalization tests",
+    "confidential seller handling tests"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:sellers-json-seller-identity-policy"
+  ]
+}
