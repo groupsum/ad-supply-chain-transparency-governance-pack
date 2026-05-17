@@ -1,0 +1,23 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1004"
+number: 1004
+slug: "iab-buyer-and-demand-path-source-selection"
+title: "IAB Buyer And Demand Path Source Selection"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Buy-side transparency requires authority sources that describe buying entities and request-time demand paths."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Buy-side transparency requires authority sources that describe buying entities and request-time demand paths.
+  
+  ## Decision
+  
+  buyers.json and the DemandChain Object are selected as canonical authority sources for buyer identity and demand-path transparency targets. The repository must curate buyer identity files separately from request-time demand-chain node requirements.

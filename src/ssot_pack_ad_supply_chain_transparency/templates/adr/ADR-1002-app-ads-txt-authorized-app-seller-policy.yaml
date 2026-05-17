@@ -1,0 +1,35 @@
+{
+  "id": "adr:app-ads-txt-authorized-app-seller-policy",
+  "number": 1002,
+  "slug": "app-ads-txt-authorized-app-seller-policy",
+  "title": "App-ads.txt Authorized App Seller Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream discovery, parsing, trust, and reconciliation of app inventory authorized-seller records.",
+    "excludes": [
+      "Web inventory seller declarations",
+      "App store marketing metadata unrelated to seller authorization",
+      "Campaign attribution decisions"
+    ]
+  },
+  "authority_sources": [
+    "app-ads.txt"
+  ],
+  "decision": [
+    "Treat app-ads.txt as the authoritative source for declared app inventory authorized sellers.",
+    "Resolve app developer website discovery and retain the source path used to retrieve seller declarations.",
+    "Reconcile app-ads.txt records with seller identity and request-time supply-chain evidence when those records are used for conformance claims."
+  ],
+  "conformance_targets": [
+    "app-ads.txt discovery",
+    "app authorized seller record parsing",
+    "app seller authorization reconciliation"
+  ],
+  "evidence_expectations": [
+    "app-ads.txt source snapshots",
+    "developer website discovery records",
+    "validation and reconciliation reports"
+  ]
+}

@@ -1,0 +1,23 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1005"
+number: 1005
+slug: "ads-cert-and-openrtb-supply-chain-source-selection"
+title: "Ads.cert And OpenRTB Supply Chain Source Selection"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Supply-chain transparency may require transmitted request-time chain evidence and authenticated inventory evidence in addition to declared seller and buyer files."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Supply-chain transparency may require transmitted request-time chain evidence and authenticated inventory evidence in addition to declared seller and buyer files.
+  
+  ## Decision
+  
+  ads.cert and OpenRTB supply-chain fields are selected as canonical authority sources for authenticated/transmitted supply-chain evidence targets. ads.cert governs signed inventory or authenticated signal treatment. OpenRTB governs request-time carriage of supply-chain information.

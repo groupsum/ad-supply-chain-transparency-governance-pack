@@ -27,8 +27,14 @@ Advertising Supply Chain Transparency
 
 ## Included ADRs
 
-- `adr:ad-supply-chain-authority` - Ad Supply Chain Authority
-- `adr:seller-buyer-transparency-boundary` - Seller Buyer Transparency Boundary
+- `adr:ads-txt-authorized-digital-seller-policy` - Ads.txt Authorized Digital Seller Policy
+- `adr:app-ads-txt-authorized-app-seller-policy` - App-ads.txt Authorized App Seller Policy
+- `adr:sellers-json-seller-identity-policy` - Sellers.json Seller Identity Policy
+- `adr:supplychain-object-path-transparency-policy` - SupplyChain Object Path Transparency Policy
+- `adr:buyers-json-buyer-identity-policy` - Buyers.json Buyer Identity Policy
+- `adr:demandchain-object-path-transparency-policy` - DemandChain Object Path Transparency Policy
+- `adr:ads-cert-authenticated-inventory-policy` - Ads.cert Authenticated Inventory Policy
+- `adr:supply-chain-transparency-reconciliation-policy` - Supply Chain Transparency Reconciliation Policy
 
 ## Included SPECs
 

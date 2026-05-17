@@ -1,0 +1,35 @@
+{
+  "id": "adr:ads-cert-authenticated-inventory-policy",
+  "number": 1007,
+  "slug": "ads-cert-authenticated-inventory-policy",
+  "title": "Ads.cert Authenticated Inventory Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream validation and retained evidence for signed or authenticated advertising inventory signals.",
+    "excludes": [
+      "General TLS policy",
+      "Non-advertising message signing",
+      "Vendor procurement decisions"
+    ]
+  },
+  "authority_sources": [
+    "ads.cert"
+  ],
+  "decision": [
+    "Use ads.cert evidence when downstream transparency claims require authenticated advertising inventory or request evidence.",
+    "Validate signatures or authenticated signal artifacts before relying on them for supply-chain transparency claims.",
+    "Retain both successful validation evidence and failure evidence for audit review."
+  ],
+  "conformance_targets": [
+    "ads.cert signature validation",
+    "authenticated inventory evidence retention",
+    "signature failure handling"
+  ],
+  "evidence_expectations": [
+    "signed request fixtures",
+    "signature validation outputs",
+    "failure handling reports"
+  ]
+}

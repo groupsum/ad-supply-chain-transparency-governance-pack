@@ -1,0 +1,23 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1002"
+number: 1002
+slug: "iab-authorized-seller-source-selection"
+title: "IAB Authorized Seller Source Selection"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Authorized seller declarations are foundational to transparent digital ad inventory sales for web and app inventory."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Authorized seller declarations are foundational to transparent digital ad inventory sales for web and app inventory.
+  
+  ## Decision
+  
+  ads.txt and app-ads.txt are selected as canonical authority sources for seller authorization targets. The repository must curate them separately because web inventory and app inventory have different discovery and ownership paths.

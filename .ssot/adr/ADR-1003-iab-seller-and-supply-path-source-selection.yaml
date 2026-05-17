@@ -1,0 +1,23 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1003"
+number: 1003
+slug: "iab-seller-and-supply-path-source-selection"
+title: "IAB Seller And Supply Path Source Selection"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Sell-side transparency depends on both declared seller identity files and request-time supply path objects."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Sell-side transparency depends on both declared seller identity files and request-time supply path objects.
+  
+  ## Decision
+  
+  sellers.json and the SupplyChain Object are selected as canonical authority sources for seller identity and supply-path transparency targets. The repository must curate file-level seller identity requirements separately from request-time supply-chain node requirements.

@@ -1,0 +1,35 @@
+{
+  "id": "adr:sellers-json-seller-identity-policy",
+  "number": 1003,
+  "slug": "sellers-json-seller-identity-policy",
+  "title": "Sellers.json Seller Identity Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream use of sellers.json for seller identity, seller type, confidentiality, and seller account metadata.",
+    "excludes": [
+      "Buyer identity records",
+      "Request-time supply-chain node ordering",
+      "Financial settlement records"
+    ]
+  },
+  "authority_sources": [
+    "sellers.json"
+  ],
+  "decision": [
+    "Treat sellers.json as the authoritative sell-side entity file for seller identity records selected by the downstream repository.",
+    "Preserve seller identifiers, seller types, names, domains, confidentiality states, and account relationships needed for transparency claims.",
+    "Reconcile sellers.json records with ads.txt/app-ads.txt declarations and SupplyChain Object nodes where those surfaces are used together."
+  ],
+  "conformance_targets": [
+    "sellers.json file validation",
+    "seller identity record validation",
+    "seller confidentiality handling"
+  ],
+  "evidence_expectations": [
+    "sellers.json source snapshots",
+    "parsed seller identity records",
+    "seller reconciliation outputs"
+  ]
+}

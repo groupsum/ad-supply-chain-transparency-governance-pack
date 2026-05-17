@@ -1,0 +1,36 @@
+{
+  "id": "adr:supplychain-object-path-transparency-policy",
+  "number": 1004,
+  "slug": "supplychain-object-path-transparency-policy",
+  "title": "SupplyChain Object Path Transparency Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream validation and reconciliation of request-time supply-chain nodes.",
+    "excludes": [
+      "Static seller files except when used for reconciliation",
+      "Buy-side demand-chain nodes",
+      "Non-OpenRTB transport-specific extensions"
+    ]
+  },
+  "authority_sources": [
+    "SupplyChain Object",
+    "OpenRTB supply-chain fields"
+  ],
+  "decision": [
+    "Treat the SupplyChain Object as the request-time authority for sell-side path transparency when present in governed ad requests.",
+    "Validate node ordering, completeness, seller identifiers, advertising system identifiers, seller account identifiers, and payment involvement indicators.",
+    "Retain normalized supply-chain nodes for reconciliation with authorized-seller and seller-identity records."
+  ],
+  "conformance_targets": [
+    "schain node validation",
+    "OpenRTB supply-chain transport",
+    "request-time supply-path reconciliation"
+  ],
+  "evidence_expectations": [
+    "request fixtures",
+    "parsed schain nodes",
+    "seller path reconciliation reports"
+  ]
+}

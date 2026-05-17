@@ -1,0 +1,35 @@
+{
+  "id": "adr:ads-txt-authorized-digital-seller-policy",
+  "number": 1001,
+  "slug": "ads-txt-authorized-digital-seller-policy",
+  "title": "Ads.txt Authorized Digital Seller Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream discovery, parsing, trust, and reconciliation of web inventory authorized-seller records.",
+    "excludes": [
+      "App inventory seller declarations",
+      "Non-advertising partner lists",
+      "Campaign attribution decisions"
+    ]
+  },
+  "authority_sources": [
+    "ads.txt"
+  ],
+  "decision": [
+    "Treat ads.txt as the authoritative source for declared web inventory authorized sellers.",
+    "Fetch, parse, normalize, and retain authorized-seller records before using them in supply-chain transparency claims.",
+    "Reconcile ads.txt records with seller identity and request-time supply-chain evidence when those records are used for conformance claims."
+  ],
+  "conformance_targets": [
+    "ads.txt file discovery",
+    "authorized seller record parsing",
+    "web seller authorization reconciliation"
+  ],
+  "evidence_expectations": [
+    "ads.txt source snapshots",
+    "parsed seller records",
+    "validation and reconciliation reports"
+  ]
+}

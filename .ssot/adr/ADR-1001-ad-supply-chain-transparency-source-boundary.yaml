@@ -1,0 +1,25 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1001"
+number: 1001
+slug: "ad-supply-chain-transparency-source-boundary"
+title: "Ad Supply Chain Transparency Source Boundary"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "This repository curates authority sources for advertising supply-chain transparency. The source set covers declared seller authorization, seller identity, request-time supply paths, buyer identity, demand paths, authenticated inventory signals, and OpenRTB supply-chain carriage."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  This repository curates authority sources for advertising supply-chain transparency. The source set covers declared seller authorization, seller identity, request-time supply paths, buyer identity, demand paths, authenticated inventory signals, and OpenRTB supply-chain carriage.
+  
+  ## Decision
+  
+  The pack authority boundary is limited to advertising supply-chain transparency targets. Canonical sources include ads.txt, app-ads.txt, sellers.json, SupplyChain Object, buyers.json, DemandChain Object, ads.cert, and OpenRTB supply-chain fields.
+  
+  The boundary excludes general ad measurement quality, campaign attribution, customer identity, consent transport, and non-advertising partner transparency unless those sources are used only as context for supply-chain transparency.

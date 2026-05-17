@@ -1,0 +1,35 @@
+{
+  "id": "adr:buyers-json-buyer-identity-policy",
+  "number": 1005,
+  "slug": "buyers-json-buyer-identity-policy",
+  "title": "Buyers.json Buyer Identity Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream use of buyers.json for buyer identity and buy-side transparency metadata.",
+    "excludes": [
+      "Sell-side seller identity records",
+      "Campaign attribution rules",
+      "Financial settlement records"
+    ]
+  },
+  "authority_sources": [
+    "buyers.json"
+  ],
+  "decision": [
+    "Treat buyers.json as the authoritative buy-side entity file for buyer identity records selected by the downstream repository.",
+    "Preserve buyer identifiers, buyer metadata, confidentiality treatment, and account relationships needed for buy-side transparency claims.",
+    "Reconcile buyers.json records with DemandChain Object nodes where those surfaces are used together."
+  ],
+  "conformance_targets": [
+    "buyers.json file validation",
+    "buyer identity record validation",
+    "buyer confidentiality handling"
+  ],
+  "evidence_expectations": [
+    "buyers.json source snapshots",
+    "parsed buyer records",
+    "buyer reconciliation outputs"
+  ]
+}

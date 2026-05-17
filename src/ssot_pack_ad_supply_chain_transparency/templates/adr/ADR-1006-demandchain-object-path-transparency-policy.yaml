@@ -1,0 +1,35 @@
+{
+  "id": "adr:demandchain-object-path-transparency-policy",
+  "number": 1006,
+  "slug": "demandchain-object-path-transparency-policy",
+  "title": "DemandChain Object Path Transparency Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream validation and reconciliation of request-time demand-chain nodes.",
+    "excludes": [
+      "Sell-side supply-chain nodes",
+      "Static buyer files except when used for reconciliation",
+      "Campaign attribution decisions"
+    ]
+  },
+  "authority_sources": [
+    "DemandChain Object"
+  ],
+  "decision": [
+    "Treat the DemandChain Object as the request-time authority for buy-side path transparency when present in governed ad transactions.",
+    "Validate node ordering, completeness, buyer identifiers, domain identifiers, and participant semantics selected by the downstream repository.",
+    "Retain normalized demand-chain nodes for reconciliation with buyer identity records."
+  ],
+  "conformance_targets": [
+    "dchain node validation",
+    "buy-side path normalization",
+    "buyer path reconciliation"
+  ],
+  "evidence_expectations": [
+    "request fixtures",
+    "parsed dchain nodes",
+    "buyer path reconciliation reports"
+  ]
+}

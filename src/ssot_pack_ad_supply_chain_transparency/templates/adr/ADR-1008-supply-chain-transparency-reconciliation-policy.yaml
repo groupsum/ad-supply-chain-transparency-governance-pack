@@ -1,0 +1,42 @@
+{
+  "id": "adr:supply-chain-transparency-reconciliation-policy",
+  "number": 1008,
+  "slug": "supply-chain-transparency-reconciliation-policy",
+  "title": "Supply Chain Transparency Reconciliation Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "scope": {
+    "governs": "Downstream reconciliation among declared seller and buyer files, request-time chain objects, authenticated evidence, and transparency reports.",
+    "excludes": [
+      "Ad measurement quality scoring",
+      "Customer identity matching",
+      "Campaign attribution logic"
+    ]
+  },
+  "authority_sources": [
+    "ads.txt",
+    "app-ads.txt",
+    "sellers.json",
+    "SupplyChain Object",
+    "buyers.json",
+    "DemandChain Object",
+    "ads.cert",
+    "OpenRTB supply-chain fields"
+  ],
+  "decision": [
+    "Define reconciliation keys and failure handling before publishing supply-chain transparency reports or claims.",
+    "Reconcile declared authorized sellers, seller identities, request-time supply paths, buyer identities, demand paths, and authenticated evidence where applicable.",
+    "Retain source snapshots, parsed records, request-time objects, validation reports, and reconciliation outputs as evidence."
+  ],
+  "conformance_targets": [
+    "seller authorization reconciliation",
+    "buyer demand-path reconciliation",
+    "transparency audit evidence"
+  ],
+  "evidence_expectations": [
+    "source snapshots",
+    "parsed transparency records",
+    "chain validation and reconciliation reports"
+  ]
+}
