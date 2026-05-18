@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "ssot_package_name": "ssot-pack-ad-supply-chain-transparency",
+  "ssot_package_name": "ad-supply-chain-transparency-governance-pack",
   "origin": {
     "id": "pack:ad-supply-chain-transparency",
-    "package_name": "ssot-pack-ad-supply-chain-transparency",
+    "package_name": "ad-supply-chain-transparency-governance-pack",
     "import_name": "ssot_pack_ad_supply_chain_transparency",
     "kind": "governance-pack",
     "title": "Advertising Supply Chain Transparency",
@@ -19,7 +19,7 @@
   "trust": {
     "trusted_by_default": false,
     "origin": "extension-pack",
-    "reservation_owner": "extension-pack:ssot-pack-ad-supply-chain-transparency"
+    "reservation_owner": "extension-pack:ad-supply-chain-transparency-governance-pack"
   },
   "documents": {
     "adr": {

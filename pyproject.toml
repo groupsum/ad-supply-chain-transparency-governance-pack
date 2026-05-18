@@ -3,7 +3,7 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ssot-pack-ad-supply-chain-transparency"
+name = "ad-supply-chain-transparency-governance-pack"
 version = "0.1.0"
 description = "Installable SSOT governance pack for ads.txt, app-ads.txt, sellers.json, SupplyChain Object, buyers.json, DemandChain Object, and ads.cert."
 readme = "README.md"
@@ -44,9 +44,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/groupsum/ssot-pack-ad-supply-chain-transparency"
-Repository = "https://github.com/groupsum/ssot-pack-ad-supply-chain-transparency"
-Issues = "https://github.com/groupsum/ssot-pack-ad-supply-chain-transparency/issues"
+Homepage = "https://github.com/groupsum/ad-supply-chain-transparency-governance-pack"
+Repository = "https://github.com/groupsum/ad-supply-chain-transparency-governance-pack"
+Issues = "https://github.com/groupsum/ad-supply-chain-transparency-governance-pack/issues"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

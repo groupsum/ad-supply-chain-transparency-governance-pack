@@ -13,7 +13,7 @@ except ModuleNotFoundError:  # pragma: no cover
 ROOT = Path(__file__).resolve().parents[1]
 ADR_TEMPLATES = ROOT / "src" / "ssot_pack_ad_supply_chain_transparency" / "templates" / "adr"
 SPEC_TEMPLATES = ROOT / "src" / "ssot_pack_ad_supply_chain_transparency" / "templates" / "specs"
-RESERVATION_OWNER = "extension-pack:ssot-pack-ad-supply-chain-transparency"
+RESERVATION_OWNER = "extension-pack:ad-supply-chain-transparency-governance-pack"
 MINIMUM_SCHEMA_VERSION = "0.4.0"
 
 
