@@ -28,7 +28,6 @@ Use this package when a downstream repository needs to answer: which standards, 
 ## Pack Metadata
 
 - Pack ID: `pack:ad-supply-chain-transparency`
-- Priority: `P3.2`
 - PyPI package: `ad-supply-chain-transparency-governance-pack`
 - Import package: `ssot_pack_ad_supply_chain_transparency`
 - GitHub repository: `groupsum/ad-supply-chain-transparency-governance-pack`
