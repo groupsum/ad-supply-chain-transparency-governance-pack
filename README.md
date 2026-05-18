@@ -1,10 +1,13 @@
+<div align="center">
+
 # ad-supply-chain-transparency-governance-pack
 
 [![PyPI version](https://img.shields.io/pypi/v/ad-supply-chain-transparency-governance-pack.svg)](https://pypi.org/project/ad-supply-chain-transparency-governance-pack/)
 [![Python versions](https://img.shields.io/pypi/pyversions/ad-supply-chain-transparency-governance-pack.svg)](https://pypi.org/project/ad-supply-chain-transparency-governance-pack/)
 [![License](https://img.shields.io/pypi/l/ad-supply-chain-transparency-governance-pack.svg)](https://pypi.org/project/ad-supply-chain-transparency-governance-pack/)
 [![Publish](https://github.com/groupsum/ad-supply-chain-transparency-governance-pack/actions/workflows/publish.yml/badge.svg)](https://github.com/groupsum/ad-supply-chain-transparency-governance-pack/actions/workflows/publish.yml)
-[![GitHub package](https://img.shields.io/badge/GitHub-package-24292f)](https://github.com/groupsum/ad-supply-chain-transparency-governance-pack)
+
+</div>
 
 Installable SSOT governance pack for ads.txt, app-ads.txt, sellers.json, SupplyChain Object, buyers.json, DemandChain Object, and ads.cert.
 
