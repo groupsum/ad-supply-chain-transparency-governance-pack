@@ -33,7 +33,7 @@ Use this package when a downstream repository needs to answer: which standards, 
 - Pack ID: `pack:ad-supply-chain-transparency`
 - PyPI package: `ad-supply-chain-transparency-governance-pack`
 - Import package: `ssot_pack_ad_supply_chain_transparency`
-- GitHub repository: `groupsum/ad-supply-chain-transparency-governance-pack`
+- GitHub repository: [groupsum/ad-supply-chain-transparency-governance-pack](https://github.com/groupsum/ad-supply-chain-transparency-governance-pack)
 - Reservation owner: `extension-pack:ad-supply-chain-transparency-governance-pack`
 
 ## Domain Focus
