@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ad-supply-chain-transparency-governance-pack"
-version = "0.1.1.dev1"
+version = "0.1.1.dev2"
 description = "Installable SSOT governance pack for ads.txt, app-ads.txt, sellers.json, SupplyChain Object, buyers.json, DemandChain Object, and ads.cert."
 readme = "README.md"
 requires-python = ">=3.10,<3.15"
