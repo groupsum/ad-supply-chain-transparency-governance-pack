@@ -143,13 +143,15 @@ The script prints `pack:ad-supply-chain-transparency` from the installed pack me
 Source: [examples/usage.py](https://github.com/groupsum/ad-supply-chain-transparency-governance-pack/blob/master/examples/usage.py).
 
 ```python
-"""Resolve and read a packaged specification without synchronizing it."""
+"""Find a specification and its downstream path in the installed manifest."""
 
-from ssot_pack_ad_supply_chain_transparency import load_document_manifest, read_packaged_document_text
+from ssot_pack_ad_supply_chain_transparency import load_document_manifest
 
-spec = next(row for row in load_document_manifest("spec") if row["id"] == "spc:ads-txt-file-discovery-and-parsing-requirements")
-document = read_packaged_document_text("spec", spec["filename"])
-assert spec["id"] in document
+specification = next(
+    row for row in load_document_manifest("spec")
+    if row["id"] == "spc:ads-txt-file-discovery-and-parsing-requirements"
+)
+assert specification["target_path"] == ".ssot/specs/SPEC-2001-ads-txt-file-discovery-and-parsing-requirements.yaml"
 ```
 <!-- readme-standards:end example.usage -->
 
